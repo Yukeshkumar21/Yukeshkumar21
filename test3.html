@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body style="background-image:url('1.jpg')">
+ <h2>Personal Details</h2>
+<link rel="stylesheet" href="test.css">
+<script>
+    function validate(){
+     var name1 = document.getElementById("fname").value;
+        //check empty first name field
+        if(name1 == "") {
+            document.getElementById("blankMsg").innerHTML = "**Fill the first name";
+            return false;
+          }
+        }
+</script> 
+<form name="f1" action="test2.html" onsubmit="return validate()" >
+  <label for="fname">First Name:</label>
+  <input type="text" id="fname" name="fname" placeholder="Eg:John">
+  <span id = "blankMsg" style="color:red"> </span><br>
+ </div>
+  <div class=submit>
+    <input type="submit" value="Submit">
+   </div>
+  </form> 
+  
+</body>
+</html>
